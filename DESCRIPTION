@@ -1,0 +1,42 @@
+Package: waifem
+Type: Package
+Title: Bayesian Time-Series and Fiscal Tools for the WAIFEM Module III Training
+Version: 0.1.0
+Authors@R: person("William G.", "Cantah", email = "wgcantah@gmail.com",
+                  role = c("aut", "cre"))
+Description: Helper functions used in the WAIFEM (West African Institute for
+    Financial and Economic Management) Module III training on Bayesian
+    macroeconometrics for central banks and ministries of finance. Includes
+    forward filtering backward sampling (FFBS) and Gibbs samplers for the
+    time-varying parameter AR(1) model with and without stochastic volatility,
+    ARCH/GARCH volatility tools, Bayesian fiscal regression with revenue and
+    primary-balance scenarios, and model evaluation tools (posterior predictive
+    checks, PIT, pointwise log-likelihoods for WAIC/LOO, g-prior Bayes factors,
+    leave-future-out validation). Ships the simulated teaching data set.
+License: MIT + file LICENSE
+Encoding: UTF-8
+Depends:
+    R (>= 4.1),
+    stochvol (>= 3.0),
+    posterior,
+    loo
+Imports:
+    stats,
+    utils,
+    readxl
+Suggests:
+    bayesGARCH,
+    fGarch,
+    coda,
+    tseries,
+    lmtest,
+    vars,
+    BVAR,
+    dlm,
+    shrinkTVP,
+    strucchange,
+    testthat (>= 3.0.0)
+Config/testthat/edition: 3
+RoxygenNote: 7.3.2
+URL: https://github.com/williamcantah/waifem
+BugReports: https://github.com/williamcantah/waifem/issues
